@@ -21,3 +21,6 @@ class Rating(models.Model):
 
     class Meta:
         unique_together = ['owner', 'product']
+
+
+#asdasdasda

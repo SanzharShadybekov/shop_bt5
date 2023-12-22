@@ -15,6 +15,5 @@ RUN mkdir static && mkdir media && mkdir media/avatars
 COPY default_avatar.jpg ./media/avatars/
 
 COPY . .
-CMD ["python", "manage.py", "runserver"]
 
 

@@ -196,12 +196,12 @@ EMAIL_HOST_USER = de_config('EMAIL_USER')
 EMAIL_HOST_PASSWORD = de_config('EMAIL_PASSWORD')
 
 
-REDIS_HOST = 'localhost'
+REDIS_HOST = 'redis'
 REDIS_PORT = '6379'
 
 CELERY_BROKER_URL = 'redis://' + REDIS_HOST + ':' + REDIS_PORT + '/0'
 CELERY_RESULT_BACKEND = 'redis://' + REDIS_HOST + ':' + REDIS_PORT + '/0'
-#                           redis://localhost:6379/0
+#                           redis://redis:6379/0
 CELERY_BROKER_TRANSPORT_OPTIONS = {'visibility_timeout': 3600}
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
